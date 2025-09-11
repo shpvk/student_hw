@@ -3,6 +3,7 @@
 class Student
 {
 private:
+
     char* name;
     int mark;
     //int size;
