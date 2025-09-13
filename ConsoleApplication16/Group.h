@@ -12,6 +12,6 @@ public:
     Group();
     ~Group();
     Group(const char* name, Student* list, int count_of_students, Subject* subject_list, int count_of_subjects);
-    void Print(const int GROUP_SIZE);
+    void Print();
 };
 

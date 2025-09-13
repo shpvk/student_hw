@@ -3,29 +3,6 @@
 
 int main()
 {
-    //Subject subj1("Math");
-    //const int GROUP_SIZE = 10;
-    //Group* group1 = new Group[GROUP_SIZE];
-
-    //char* name = new char[100];
-    //int mark;
-    //for (int i = 0; i < GROUP_SIZE; ++i)
-    //{
-    //    std::cout << "Enter name: ";
-    //    std::cin >> name;
-    //    group1[i].SetName(name);
-
-    //    std::cout << "Enter mark: ";
-    //    std::cin >> mark;
-    //    group1[i].SetMark(mark);
-    //}
-
-    //Student* students1 = new Student[GROUP_SIZE];
-    //for (int i = 0; i < GROUP_SIZE, ++i)
-    //{
-    //    students1[i]
-    //}
-
     const int GROUP_SIZE = 3;
     Student* students = new Student[GROUP_SIZE];
     Subject* subject_list = new Subject[GROUP_SIZE];
@@ -48,20 +25,16 @@ int main()
         std::cout << "Enter subject: ";
         std::cin >> subject;
         subject_list[i].SetName(subject);
+
     }
 
 
     Group group1("KN241", students, GROUP_SIZE, subject_list, GROUP_SIZE);
     
-    group1.Print(GROUP_SIZE);
-    
-    
-    
+    group1.Print();
+      
+    delete[] name;
+    delete[] subject;
+    delete[] students;
+    delete[] subject_list;
 }
-
-
-
-
- 
-
-
