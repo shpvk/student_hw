@@ -51,3 +51,13 @@ int Student::GetMark()
 {
     return mark;
 }
+
+Student::Student(const Student& obj)
+{
+    name = new char[strlen(obj.name) + 1];
+    strcpy_s(name, strlen(obj.name) + 1, obj.name);
+
+    mark = obj.mark;
+
+    std::cout << "Copy constructor\n";
+}

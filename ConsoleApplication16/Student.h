@@ -17,5 +17,7 @@ public:
 
     void SetMark(int mark);
     int GetMark();
+
+    Student(const Student& obj);
 };
 

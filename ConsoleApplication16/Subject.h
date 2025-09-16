@@ -10,5 +10,7 @@ public:
 
 	void SetName(const char* name);
 	char* GetName();
+
+	Subject(const Subject& obj);
 };
 

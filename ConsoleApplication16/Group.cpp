@@ -52,3 +52,23 @@ void Group::Print()
         std::cout << "Name: " << subject_list[i].GetName() << "\n";
     }
 }
+
+Group::Group(const Group& obj)
+{
+    /*
+        Student* list;
+    int count_of_students;
+    Subject* subject_list;
+    int count_of_subjects;
+    */
+
+    name = new char[strlen(obj.name) + 1];
+    strcpy_s(name, strlen(obj.name) + 1, obj.name);
+
+    list = obj.list;
+    count_of_students = obj.count_of_students;
+    subject_list = obj.subject_list;
+    count_of_subjects = obj.count_of_students;
+
+    std::cout << "Copy constructor\n";
+}

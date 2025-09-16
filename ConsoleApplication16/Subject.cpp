@@ -25,3 +25,12 @@ char* Subject::GetName()
 {
     return name;
 }
+
+Subject::Subject(const Subject& obj)
+{
+    name = new char[strlen(obj.name) + 1];
+    strcpy_s(name, strlen(obj.name) + 1, obj.name);
+    
+    std::cout << "Copy constructor\n";
+
+}

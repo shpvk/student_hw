@@ -13,5 +13,7 @@ public:
     ~Group();
     Group(const char* name, Student* list, int count_of_students, Subject* subject_list, int count_of_subjects);
     void Print();
+
+    Group(const Group& obj);
 };
 
